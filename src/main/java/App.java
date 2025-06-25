@@ -11,12 +11,12 @@ public class App {
         System.out.println(bean.getMessage());
 
         HelloWorld bean2 = (HelloWorld) applicationContext.getBean("helloworld");
-        System.out.println(bean == bean2);
+        System.out.println("HeloWorld bean1 тот же обьект что и bean2? - " + ((bean == bean2)));
 
         Cat cat = (Cat) applicationContext.getBean("Cat");
         Cat cat2 = (Cat) applicationContext.getBean("Cat");
 
-        System.out.println(cat == cat2);
+        System.out.println("Cat bean cat1 тот же обьект что и cat2? - " + (cat == cat2));
 
     }
 }
